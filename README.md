@@ -6,6 +6,7 @@ Technical test about comics
   <li>To run ComicApp we first need to install the dependencies <code>node_modules</code> in the projects <code>comic-app</code> and <code>server</code></li>
   <li>For this we go to the root folder of each project and execute <code>npm install</code></li>
   <li>Then, we go to the <code>server</code> folder and execute the following command <code>npm run start</code>, this command is responsible for executing both projects.</li>
+  <li>To run the tests run the command <code>npm run test</code> </li>
 </ul>
 
 <h3>That would be all! 😄</h3>
