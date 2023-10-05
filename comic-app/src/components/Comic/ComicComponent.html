@@ -1,0 +1,9 @@
+<Card v-bind:title="comicStore?.comic?.title">
+    <template v-slot:front>
+        <Img v-bind:src="comicStore?.comic?.img" />
+        <Rating/>
+    </template>
+    <template v-slot:back>
+        <Detail/>
+    </template>
+</Card>

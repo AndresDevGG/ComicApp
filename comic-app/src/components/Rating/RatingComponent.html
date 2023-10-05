@@ -1,0 +1,8 @@
+<div>
+    <div class="rating">
+        <template v-for="index in ratings">
+            <input v-bind:value="index" name="rate" v-bind:id="'star' + index " type="radio" @click="qualifyRating(index)">
+            <label title="text" v-bind:for="'star'+index" v-bind:data-test="'star-' +index"></label>
+        </template>
+    </div>
+</div>

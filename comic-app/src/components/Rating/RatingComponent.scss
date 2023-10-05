@@ -1,0 +1,55 @@
+@import './../../assets/colors.scss';
+
+.rating {
+    display: inline-block;
+
+    input {
+        display: none;
+    }
+
+    label {
+        float: right;
+        cursor: pointer;
+        color: #ccc;
+        transition: color 0.3s;
+        margin: 0 10px;
+        &:before {
+            content: '\2605';
+            font-size: 100px;
+        }
+    }
+
+    input:checked~label {
+        color: $dark-yellow;
+        transition: color .5s;
+    }
+
+    label:hover {
+        color: $dark-yellow;
+        transition: color .5s;
+        background: transparent;
+        filter: drop-shadow(0 0 1.5em $dark-yellow);
+
+        ~label {
+            color: $dark-yellow;
+            transition: color .5s;
+        }
+    }
+}
+
+@media (prefers-color-scheme: light) {
+
+    .rating {    
+        input:checked~label {
+            color: $yellow;
+        }
+    
+        label:hover {
+            color: $yellow;
+    
+            ~label {
+                color: $yellow;
+            }
+        }
+    }
+  }

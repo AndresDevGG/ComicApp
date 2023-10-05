@@ -1,0 +1,13 @@
+<div class="card">
+    <div class="header">
+        <h1 class="title">{{title}}</h1>
+        <i @click="setView()" class="ri-arrow-go-back-line pointer reverse"></i>
+    </div>
+    <div class="front" v-bind:class="{'d-none': !isFront}">
+        <slot name="front"></slot>
+    </div>
+    <div class="back" v-bind:class="{'d-none': isFront}">
+        <slot name="back"></slot>
+    </div>
+
+</div>
