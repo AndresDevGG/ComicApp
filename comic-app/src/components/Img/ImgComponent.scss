@@ -10,3 +10,10 @@
 	-webkit-transform: scale(1.5);
     transform: scale(1.2);
 }
+
+.img-comic {
+	width: 100%;
+	height: 300px;
+	object-fit: contain;
+	object-position: center;
+}

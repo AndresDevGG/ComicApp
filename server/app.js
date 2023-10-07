@@ -9,7 +9,7 @@ app.use(cors());
 
 app.get("/comic", async (req, res) => {
     try {
-        const response = await axios.get("https://xkcd.com/2837/info.0.json");
+        const response = await axios.get("https://xkcd.com/info.0.json");
         res.json(response.data);
     } catch (error) {
         console.error(error);
